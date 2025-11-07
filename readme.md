@@ -63,6 +63,3 @@ Troubleshooting
 - "Invalid redirect_uri" from GitHub: ensure the callback URL registered on GitHub matches the URL your app sends.  
 - Missing code param at callback: ensure GitHub redirected correctly and state handling is correct.  
 - Port in use: change PORT or stop the process using the port.
-
-License  
-MIT (or change as appropriate)
