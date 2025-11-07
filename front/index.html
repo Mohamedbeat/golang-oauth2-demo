@@ -1,0 +1,23 @@
+<script>
+
+const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get('token');
+    
+    if (token) {
+        // Store the token (localStorage, sessionStorage, or memory)
+        localStorage.setItem('authToken', token);
+        
+        // Remove token from URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+
+        // Display the token on the page
+        const tokenDisplay = document.createElement('p');
+        tokenDisplay.textContent = `Token: ${token}`;
+        document.body.appendChild(tokenDisplay);
+        
+        }
+</script>
+<body>
+welcome test
+
+</body>
